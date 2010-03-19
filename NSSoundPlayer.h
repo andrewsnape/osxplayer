@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <QTKit/QTKit.h>
 
 @interface NSSoundPlayer : NSObject<NSSoundDelegate> {
 

@@ -17,6 +17,9 @@
 		5472E5C611466604004FF888 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5401438B11466597005269FD /* Growl.framework */; };
 		54D7538A114678A900051D52 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D75389114678A900051D52 /* Carbon.framework */; };
 		54E1E8DF1146666400832C16 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5401438B11466597005269FD /* Growl.framework */; };
+		54E6CAA111496198005CCD13 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6CAA011496198005CCD13 /* QuickTime.framework */; };
+		54E6CAE711496941005CCD13 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6CAE611496941005CCD13 /* AudioToolbox.framework */; };
+		54E6CAE911496941005CCD13 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6CAE811496941005CCD13 /* AudioUnit.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -54,6 +57,9 @@
 		3BF66D4811466D7E00C6D004 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
 		5401438B11466597005269FD /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		54D75389114678A900051D52 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		54E6CAA011496198005CCD13 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
+		54E6CAE611496941005CCD13 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		54E6CAE811496941005CCD13 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* audioplayer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "audioplayer-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* audioplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = audioplayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,6 +72,9 @@
 				54E1E8DF1146666400832C16 /* Growl.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				54D7538A114678A900051D52 /* Carbon.framework in Frameworks */,
+				54E6CAA111496198005CCD13 /* QuickTime.framework in Frameworks */,
+				54E6CAE711496941005CCD13 /* AudioToolbox.framework in Frameworks */,
+				54E6CAE911496941005CCD13 /* AudioUnit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +159,9 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 				5401438B11466597005269FD /* Growl.framework */,
 				54D75389114678A900051D52 /* Carbon.framework */,
+				54E6CAA011496198005CCD13 /* QuickTime.framework */,
+				54E6CAE611496941005CCD13 /* AudioToolbox.framework */,
+				54E6CAE811496941005CCD13 /* AudioUnit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

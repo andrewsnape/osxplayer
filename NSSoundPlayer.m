@@ -8,6 +8,8 @@
 
 #import "NSSoundPlayer.h"
 #import <Growl/Growl.h>
+#import <QuickTime/QTSMovie.h>
+#include <AudioToolbox/AudioToolbox.h>
 
 @implementation NSSoundPlayer
 
@@ -23,6 +25,8 @@ NSString *_next;
 	if (self = [super init]) {
 		_files = [[NSMutableArray alloc] initWithArray:files];
 	}
+	
+	NSBundle *qtKitBundle = [NSBundle bundleWithIdentifier:@"com.apple.QTKit"];
 	
 	NSBundle *myBundle = [NSBundle bundleForClass:[NSSoundPlayer class]]; 
 	NSString *growlPath = [[myBundle privateFrameworksPath] stringByAppendingPathComponent:@"Growl.framework"]; 
@@ -57,6 +61,13 @@ NSString *_next;
 			srandom(time(NULL));
 			_trackNumber = random() % [_files count];
 		}
+		
+		AudioFileID audioFile;
+		CFURLRef theURL = CFURLCreateFromFileSystemRepresentation(kCFAllocatorDefault, (UInt8*)_next, strlen(_next), FALSE);
+		
+		
+			//OSType udType;
+			//udTYpe = GetNextUserDataType(<#UserData theUserData#>, <#OSType udType#>)
 		
 		_next = [_files objectAtIndex:(NSInteger)_trackNumber];
 		NSLog(_next);
